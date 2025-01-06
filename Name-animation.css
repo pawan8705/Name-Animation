@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    min-height: 100vh;
+    background: #001401;
+}
+h2{
+    position: relative;
+    font-size: 4em;
+    color: transparent;
+    -webkit-text-stroke: 2px #1aff00;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    cursor: default;
+}
+h2 span{
+    display: inline-flex;
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(0 0 15px #1aff00);
+}
+h2 span:nth-child(even){
+    letter-spacing: -1em;
+    overflow: hidden;
+}
+h2:hover~h2 span:nth-child(even),
+h2:hover span:nth-child(even){
+    letter-spacing: 0;
+    color: #1aff00;
+}
